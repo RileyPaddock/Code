@@ -3,7 +3,7 @@ import numpy as np
 f = open("./OscarWilde.txt", "r")
 substitutions = {k:k for k in "abcdefghijklmnopqrstuvwxyzã- "}
 substitutions["\n"] = " "
-
+substitutions["."] = " <E>"
 adjusted_text = ""
 for c in f.read().lower():
     try:
